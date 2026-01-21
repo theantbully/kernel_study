@@ -23,6 +23,7 @@ qemu-system-x86_64 \
 	-s  # kgdb on port:1234
 
 # How to debug kernel ?
+# 0) Enable kernel gdb debug scripts option & build kernel.
 # 1) add "add-auto-load-safe-path ~/qemu/kernel_study/kernel/scripts/gdb" into ~/.gdbinit
 # 2) gdb kernel/vmlinux
 # (gdb) target remote :1234  # connect kernel
